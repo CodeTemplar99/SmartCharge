@@ -32,14 +32,22 @@ body{
 font-family: 'Orbitron' ;
 /* font-family: 'Faster One' ; */
 }
-.nav-text{
+ a .nav-text{
     color: white;
         font-family: 'IBM Plex Sans';
         font-size: 105%;
+        cursor: pointer;
+}
+a .nav-text:hover{
+    color: #1bc097;
+    border-bottom: 3px solid #1bc097;
 }
 
 .fa-user-circle{
     font-size: 25px;
+}
+#tab2, #tab3, #tab4{
+display: none;
 }
 
 .boxes{
@@ -81,4 +89,8 @@ color: white;
 
 .btn:hover{
     background: #1bc097 !important;
+}
+
+a{
+    text-decoration: none !important;
 }
