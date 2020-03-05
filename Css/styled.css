@@ -1,0 +1,84 @@
+:root{
+--primary-color:#2b4358;
+--secondary-color:#b2223a;
+--tertiary-color: linear-gradient(to left, #0d1336, #264A9D);
+--mask-color:#d3d3d3;
+--draw-color:#ecec12;
+
+}
+
+body{
+    background: rgb(226, 225, 225);
+    font-size: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container-fluid{
+    height: 100vh;
+}
+
+.header{
+    background-color: var(--primary-color);
+}
+
+.brand-name{
+    color:  white;
+    font-size: 200%;
+    /* font-family: 'ZCOOL QingKe HuangYou'; */
+font-family: 'Orbitron' ;
+/* font-family: 'Faster One' ; */
+}
+.nav-text{
+    color: white;
+        font-family: 'IBM Plex Sans';
+        font-size: 105%;
+}
+
+.fa-user-circle{
+    font-size: 25px;
+}
+
+.boxes{
+    background: white;
+    border: 1px solid lightgray;
+    box-shadow: 0px 1px 12px lightgray;
+}
+
+#Cash_info_box{
+background: var(--primary-color);
+color: white;
+}
+.cash-info-intro{
+    font-size: 12px;
+}
+
+.cash-display{
+    font-size: 180%;
+}
+
+
+#network_box{
+    height: 300px;
+}
+.networks{
+    font-family: 'Exo 2' ;
+    margin: 10px;
+}
+
+.net_name{
+    font-family: 'Oxanium';
+    font-size: 150%;
+}
+
+.btn{
+    background: #137e63 !important;
+    color: white;
+}
+
+.btn:hover{
+    background: #1bc097 !important;
+}
