@@ -94,3 +94,26 @@ color: white;
 a{
     text-decoration: none !important;
 }
+
+.about-bk-img{
+height: 50vh;
+}
+
+.about-intro{
+    font-size: 300%;
+    color: var(--primary-color);
+    font-family: tahoma;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px white;
+}
+.about-fore{
+    background: var(--primary-color);
+}
+
+.about-icons{
+    font-size: 140%;
+}
+.little-texts{
+ font-size: 110%;
+        font-family: 'IBM Plex Sans';
+}
