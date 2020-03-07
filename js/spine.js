@@ -23,7 +23,34 @@
 // })
 
 
-document.querySelector('#tab2-link').addEventListener('click', function () {
-    document.querySelector('#tab1').style.display = "none";
-    document.querySelector('#tab2').style.display = "block";
-})
+// document.querySelector('#dp-face').addEventListener('mouseover',
+//     function (h) {
+//         if (h.event = 'mouseover') {
+//             document.querySelector('.hover-board').style.display = "block"
+//         }
+
+//         else if (h.event != 'mouseover') {
+//             document.querySelector('#dp-face').addEventListener('mouseout', function () {
+//                 document.querySelector('.hover-board').style.display = "none"
+
+
+//             }
+
+//             )
+//         }
+//     })
+
+document.getElementById(".dp-face").addEventListener("mouseover", function (event) {
+    var target = event.target,
+        related = event.relatedTarget,
+        match;
+
+
+    // exit if no matching node has been found
+    if (!match) { return; }
+
+    // loop through the parent of the related target to make sure that it's not a child of the target
+    while (related && related != target && related != document) {
+        related = related.parentNode;
+    }
+

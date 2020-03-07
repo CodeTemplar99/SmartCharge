@@ -46,6 +46,25 @@ a .nav-text:hover{
 .fa-user-circle{
     font-size: 25px;
 }
+
+.hover-board{
+    display: none;
+    right: 3% !important;
+    width: 150px;
+    top: 25px;
+    z-index: 4;
+}
+
+.hover-board li{
+    color: #137e63;
+    cursor: pointer;
+}
+
+.hover-board li:hover{
+    background: var(--primary-color) !important;
+    color: white;
+}
+
 #tab2, #tab3, #tab4{
 display: none;
 }
@@ -116,4 +135,12 @@ height: 50vh;
 .little-texts{
  font-size: 110%;
         font-family: 'IBM Plex Sans';
+}
+.profile-pic-con{
+    background: var(--primary-color) !important;
+}
+
+#profile-pic{
+    color: white;
+    font-size: 700%;
 }
