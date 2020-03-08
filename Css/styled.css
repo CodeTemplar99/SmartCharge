@@ -1,5 +1,5 @@
 :root{
---primary-color:#2b4358;
+--primary-color:#293d4e;
 --secondary-color:#b2223a;
 --tertiary-color: linear-gradient(to left, #0d1336, #264A9D);
 --mask-color:#d3d3d3;
@@ -143,4 +143,21 @@ height: 50vh;
 #profile-pic{
     color: white;
     font-size: 700%;
+}
+
+.forms-super-con, .sign-up-con{
+    background: var(--primary-color);
+}
+
+
+#message{
+    height: 150px;
+}
+
+.log-cons{
+    min-height: 630px;
+}
+
+.sign-up-con{
+    color: white !important;
 }
