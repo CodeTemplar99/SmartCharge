@@ -25,13 +25,15 @@
                 <p class="lead ml-md-5 brand-name my-1">Smart</p>
             </a>
         </div>
-        <div class="jumbotron container p-0">
+        <div class="jumbotron bg-transparent container p-0">
             <div class="jumbotron d-flex mb-0 p-2 justify-content-between sign-up-con">
                 <div class="jumbotron bg-secondary col-6 rounded-0 log-cons mb-0"
                     style="background-image: url(./images/174007_00_2x.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
                 </div>
-                <div class="jumbotron bg-transparent col-6 rounded-0 log-cons mb-0">
-                    <p class="lead mt-0">Talk To Us, We Promise To Talk Back.</p>
+
+
+                <div class="jumbotron bg-transparent col-6 rounded-0 log-cons mb-0" id="reg-con">
+                    <p class="lead mt-0">Sign up to Smart</p>
                     <form>
                         <div class="form-row">
                             <div class="form-group col-md-12">
@@ -58,38 +60,126 @@
                         <div class="form-group">
                             <label for="inputAddress2">Address</label>
                             <input type="text" class="form-control" id="inputAddress2"
-                                placeholder="Apartment, studio, or floor">
+                                placeholder="Apartment, street, or floor">
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <input type="text" class="form-control" id="inputCity" placeholder="City">
                             </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputState">State</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                            <!-- <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                            </div> -->
-                            <div class="form-group mt-3 col-12">
-                                <button type="submit" class="btn btn-primary col-5 border-0">Sign up</button>
-                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-3 col-12">
+                            <button type="submit" class="btn btn-primary col-5 border-0">Sign up</button>
+                        </div>
                     </form>
                     <div class="form-group col-12 p-0 m-0">
                         Click here to <a href="#">login</a>
                     </div>
                 </div>
+
+                <div class="jumbotron bg-transparent col-6 rounded-0 log-cons mb-0" id="reg-con">
+                    <div class="form-group col-md-12">
+                        <p class="lead mt-0">Log in up to use your Smart account</p>
+                    </div>
+
+                    <form>
+
+                        <div class="form-group col-md-9">
+                            <label for="inputAddress">Username</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Username">
+                        </div>
+                        <div class="form-group col-md-9">
+                            <label for="inputEmail4">Password</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group mt-3 col-12">
+                            <button type="submit" class="btn btn-primary col-5 border-0">Login</button>
+                        </div>
+
+                    </form>
+                    <div class="form-group col-md-9 m-0">
+                        Click here to <a href="#">reset password</a>
+                    </div>
+                </div>
+
+                <div class="jumbotron bg-transparent col-6 rounded-0 log-cons mb-0" id="reg-con">
+                    <div class="form-group col-md-12 mb-4">
+                        <p class="lead mt-0 mb-0">Enter email linked to your account</p>
+                        <small class="text-warning">A code will be sent to you</small>
+                    </div>
+
+                    <form>
+
+                        <div class="form-group col-md-10">
+                            <label for="inputAddress">Email</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Email">
+                        </div>
+
+                        <div class="form-group mt-3 col-12">
+                            <button type="submit" class="btn btn-primary col-4 border-0">Submit</button>
+                        </div>
+
+                    </form>
+                    <!-- <div class="form-group col-md-9 m-0">
+                        Click here to <a href="#">resend code</a>
+                    </div> -->
+                </div>
+
+                <div class="jumbotron bg-transparent col-6 rounded-0 log-cons mb-0" id="reg-con">
+                    <div class="form-group col-md-12 mb-4">
+                        <p class="lead mt-0 mb-0">Enter code sent to your email the exact way</p>
+                    </div>
+
+                    <form>
+                        <div class="form-group col-md-10">
+                            <label for="inputAddress">Enter code</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Code">
+                        </div>
+
+                        <div class="form-group mt-3 col-12">
+                            <button type="submit" class="btn btn-primary col-4 border-0">Submit</button>
+                        </div>
+
+                    </form>
+                    <div class="form-group col-md-9 m-0">
+                        Click here to <a href="#">resend code</a>
+                    </div>
+                </div>
+
+                <div class="jumbotron bg-transparent col-6 rounded-0 log-cons mb-0">
+                    <div class="form-group col-md-12">
+                        <p class="lead mt-0">Reset Password and Login to use your Smart account</p>
+                    </div>
+
+                    <form>
+
+                        <div class="form-group col-md-9">
+                            <label for="inputEmail4">New Password</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+
+                        <div class="form-group col-md-9">
+                            <label for="inputEmail4">Confirm Password</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group mt-3 col-12">
+                            <button type="submit" class="btn btn-primary col-5 border-0">Reset</button>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </div>
-
-    </div>
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="#"> Company.com</a>
+        <div class="footer-copyright bg-transparent text-center mt-3 py-3">© 2020 Copyright:
+            <a href="#"> Company.com</a>
+        </div>
     </div>
 
 </body>

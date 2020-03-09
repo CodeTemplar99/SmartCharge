@@ -40,10 +40,10 @@
 //         }
 //     })
 
-document.getElementById(".dp-face").addEventListener("mouseover", function (event) {
-    var target = event.target,
-        related = event.relatedTarget,
-        match;
+// document.getElementById(".dp-face").addEventListener("mouseover", function (event) {
+//     var target = event.target,
+//         related = event.relatedTarget,
+//         match;
 
 
     // exit if no matching node has been found
