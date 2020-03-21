@@ -1,115 +1,67 @@
-    <p class="p-4 col-11">In web development, We
-                                understand the Web, and we know how to use it to help you achieve
-                                your goals. <br>
-                                Whether that’s promoting your business and raising your
-                                company profile; selling your products online; or creating more
-                                advanced online experiences,and tools.<br>
-                                Our designers/ developers develop
-                                conceptual designs in conjunction with idea development and site
-                                planning, which are presented for pre- approval. The basic Content
-                                Management System (CMS) establishes a structure and navigation
-                                system that allows you the luxury of managing your own website in the
-                                future.<br> When companies use a design firm for their branding and a web
-                                company for their online-activity and website design, the result is all too
-                                often a fragmented and disjointed marketing effort. This can make your
-                                brand look indecisive or even unstable.<br> We believe our combination of
-                                graphic and website design with website programming provides you with
-                                a well-rounded, polished package.</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="jumbotron service_blocks p-0">
-                            <div class="jumbotron block_heads">
-                                <i style="color: blue;" class="block_icons fa fa-desktop"></i>
-                                <p class="lead text-dark">Desktop Apps</p>
-                            </div>
-                            <hr>
-                            <p class="p-4 col-11">
-                                Our understanding of different Desktop environments have given us an edge in developing
-                                fit-to-screen and highly scalable desktop applications across all screen types and
-                                sizes. Our developers have the technical know-how to deliver your Apps in immersive
-                                displays and with full functionality so you wouldn't have to worry<br>
-                                about new extra large
-                                display screens or older relatively smaller screens.<br>
-                                Also we adapt apps to deliver high quality performance in high performance systems and
-                                low performance systems,thereby achieving your desired purpose with full speed app
-                                across different CPU types.
-                            </p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="jumbotron service_blocks p-0">
-                            <div class="jumbotron block_heads">
-                                <i style="color: green;" class="block_icons fa fa-mobile-alt"></i>
-                                <p class="lead text-dark">Mobile Apps</p>
-                            </div>
-                            <hr>
-                            <p class="p-4 col-11">
-                                In Mobile App development, we treat the mobile device a computer and
-                                a personal device, this have helped over the years in delivering personalized and
-                                emotionally stable apps for
-                                our client and the end user. With the mobile platform cutting across different
-                                screen<br>
-                                sizes and different processing power, the professional demand of a high quality app
-                                grows
-                                as the conditions varies</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="jumbotron service_blocks p-0">
-                            <div class="jumbotron block_heads">
-                                <i style="color: orange;" class="block_icons fa fa-image"></i>
-                                <p class="lead text-dark">Graphics</p>
-                            </div>
-                            <hr>
-                            <p class="p-4 col-11">We Are A Full Service Graphic Design Agency<br>
-                                Graphic design is integral to everyday life Our talented designers will be
-                                happy to assist you with a foundation for your unique brand.<br>
-                                By designing a distinctive and professional corporate identity, we will aid
-                                you in distinguishing your business from that of your competitors,
-                                secure its image and generate brand awareness and ultimately brand
-                                loyalty.<br>
-                                We will assist you in marketing and building your business step
-                                by step, be it in apps user interface design, photoshop design,<br>
-                                powerpoint design, illustration, vector design, advertisement.</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="jumbotron service_blocks p-0">
-                            <div class="jumbotron block_heads">
-                                <i style="color: purple;" class="block_icons fa fa-align-left"></i>
-                                <p class="lead text-dark">Scripting and APIs development</p>
-                            </div>
-                            <hr>
-                            <p class="p-4 col-11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                                soluta placeat
-                                reiciendis maxime culpa quaerat quae. Dolore dolorem esse asperiores veniam, possimus
-                                aperiam praesentium enim ipsa, aspernatur error non dicta.</p>
-                        </div>
-                    </td>
+ 
+                <div class="jumbotron bg-transparent col-sm-12 col-md-6 col-lg-6 pl-0 rounded-0 log-cons mb-0 ">
+                    <div class="form-group col-md-12 mb-4">
+                        <p class="lead mt-0 mb-0">Enter email linked to your account</p>
+                        <small class="text-warning">A code will be sent to you</small>
+                    </div>
 
-                </tr>
-            </tbody>
-        </table>
-    </div>
-  
-    <div class="jumbotron m-4 nav_see" id="our_techs"></div>
-    <div class="jumbotron m-4 nav_see" id="our_contacts">
-        <div class="row p-3 right">
-            <div class="col-8 p-0">
-                <div class="jumbotron  col-11">
-                    <h3 class="accent-text">About Us</h3>
-                    <!-- <img class="rounded img-fluid" style="height:250px; width: 700px;" src="./images/about-us3.jpg"
-                        alt="image1s"> -->
-                    <p><span class="lead text-info">A</span>t sidegig, we believe there is a better way to develop your
-                        ideas, brand your
-                        company and build your business. A more valuable, less invasive way where costumers are earned
-                        rather than bought. We’re obsessively passionate about it, and our mission is to help people
-                        achieve it. We focus on beyond-the-clients-expectation delivery. It is what we do and we do it
-                        best and we see it as an opportunity. We are excited to help bring your imagination to being
-                        through our software, design, skills and community of excited workers.</p>
+                    <form>
+
+                        <div class="form-group col-md-10">
+                            <label for="inputAddress">Email</label>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div class="form-group mt-3 col-12">
+                            <button type="submit" class="btn btn-primary col-4 border-0">Submit</button>
+                        </div>
+
+                    </form>
+                    <!-- <div class="form-group col-md-9 m-0">
+                        Click here to <a href="#">resend code</a>
+                    </div> -->
                 </div>
 
+                <div class="jumbotron bg-transparent col-sm-12 col-md-6 col-lg-6 pl-0 rounded-0 log-cons mb-0">
+                    <div class="form-group col-md-12 mb-4">
+                        <p class="lead mt-0 mb-0">Enter code sent to your email the exact way</p>
+                    </div>
 
+                    <form>
+                        <div class="form-group col-md-10">
+                            <label for="inputAddress">Enter code</label>
+                            <input type="text" class="form-control" placeholder="Code">
+                        </div>
+
+                        <div class="form-group mt-3 col-12">
+                            <button type="submit" class="btn btn-primary col-4 border-0">Submit</button>
+                        </div>
+
+                    </form>
+                    <div class="form-group col-md-9 m-0">
+                        Click here to <a href="#">resend code</a>
+                    </div>
+                </div>
+
+                <div class="jumbotron bg-transparent col-sm-12 col-md-6 col-lg-6 pl-0 rounded-0 log-cons mb-0">
+                    <div class="form-group col-md-12">
+                        <p class="lead mt-0">Reset Password and Login to use your Smart account</p>
+                    </div>
+
+                    <form>
+
+                        <div class="form-group col-md-9">
+                            <label for="inputEmail4">New Password</label>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div class="form-group col-md-9">
+                            <label for="inputEmail4">Confirm Password</label>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group mt-3 col-12">
+                            <button type="submit" class="btn btn-primary col-5 border-0">Reset</button>
+                        </div>
+
+                    </form>
+                </div>

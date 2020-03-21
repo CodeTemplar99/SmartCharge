@@ -1,14 +1,16 @@
 :root{
 --primary-color:#293d4e;
 --secondary-color:#b2223a;
---tertiary-color: linear-gradient(to left, #0d1336, #264A9D);
---mask-color:#d3d3d3;
---draw-color:#ecec12;
+--mask-color:#eb2323;
 
 }
 
 body{
-    background: rgb(226, 225, 225);
+    /* background: #cecdcd; */
+    background: url(/images/space_illustration-wallpaper-1600x900.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     font-size: 100%;
     font-family: sans-serif;
     margin: 0;
@@ -27,52 +29,56 @@ body{
 
 .brand-name{
     color:  white;
-    font-size: 200%;
+    font-size: 150%;
     /* font-family: 'ZCOOL QingKe HuangYou'; */
 font-family: 'Orbitron' ;
 /* font-family: 'Faster One' ; */
 }
- a .nav-text{
-    color: white;
-        font-family: 'IBM Plex Sans';
-        font-size: 105%;
-        cursor: pointer;
+ .nav-text{
+    color: white !important;
+        font-family: 'IBM Plex Sans' !important;
+        font-size: 115% !important;
+        cursor: pointer !important;
 }
-a .nav-text:hover{
+.nav-text:hover{
     color: #1bc097;
     border-bottom: 3px solid #1bc097;
 }
+.dropdown-toggle{
+    color: white !important ;
+}
 
 .fa-user-circle{
-    font-size: 25px;
+    font-size: 30px;
+    color: white !important;
 }
 
 .hover-board{
-    display: none;
-    right: 3% !important;
-    width: 150px;
+    /* display: none; */
+    right: 11% !important;
+    width: 200px;
     top: 25px;
     z-index: 4;
 }
 
-.hover-board li{
-    color: #137e63;
+.hover-board a{
+    color: #137e63 !important;
     cursor: pointer;
+    margin-bottom: 10px !important;
 }
 
-.hover-board li:hover{
+
+.hover-board a:hover{
     background: var(--primary-color) !important;
-    color: white;
+    color: white !important;
 }
 
-#tab2, #tab3, #tab4{
-display: none;
+.page-indicator{
+    color: white !important;
 }
-
 .boxes{
     background: white;
     border: 1px solid lightgray;
-    box-shadow: 0px 1px 12px lightgray;
 }
 
 #Cash_info_box{
@@ -89,7 +95,7 @@ color: white;
 
 
 #network_box{
-    height: 300px;
+    height: 398px;
 }
 .networks{
     font-family: 'Exo 2' ;
@@ -154,6 +160,11 @@ height: 50vh;
     height: 150px;
 }
 
+#trans-page-list-con{
+    overflow-y:auto;
+    height: 67vh;
+}
+
 .log-cons{
     min-height: 630px;
 }
@@ -172,4 +183,55 @@ height: 50vh;
 
 .landing-ad{
     height: 45vh;
+}
+
+/* ------------------------ */
+@media screen and (max-width:425px){
+ 
+ .indicator-con{
+        width: 100% !important;
+    }
+    .dash-board{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .boxes{
+        min-width: 93% !important;
+    }
+
+    .sign-up-con{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .log-cons{
+        min-height: 30vh !important;
+    }
+
+     #network_box{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        max-height: 285px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .profile-top{
+        flex-direction:column !important;
+    }
+
+    .profile-pic-con{
+        margin-bottom: 10px !important;
+    }
+
+    .forms-super-con{
+        flex-direction: column;
+        margin-bottom: 30px !important;
+}
+
+#trans-page-list-con{
+    justify-content: start !important;
+}
 }
