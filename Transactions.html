@@ -13,23 +13,21 @@
     <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
     <link href="./icons/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="./Css/styled.css" rel="stylesheet" type="text/css">
-    <script defer src="./js/spine.js"></script>
 </head>
 </head>
 
 <body>
 
     <div class="container-fluid p-0">
-        <nav
-            class="navbar navbar-expand-lg navbar-light header                                                                                                                             ">
+        <nav class="navbar navbar-expand-lg navbar-light header">
             <a class="navbar-brand" href="./index.html">
                 <p class="lead ml-md-3 brand-name my-1">SmartCharge</p>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarSupportedContent" onclick="showBar()" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+        
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 </ul>
@@ -46,23 +44,21 @@
                     <li class="nav-item  mx-5">
                         <a class="nav-link nav-text" href="./About.html">About</a>
                     </li>
-                    <li class="nav-item  mx-5 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item  mx-5 dropdown" id="hover-spot">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" onmouseover="showBoard()"
+                            onmouseout="hideBoard()" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <i class="fa fa-user-circle"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+        
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
-
-        <div class="jumbotron position-absolute p-1 hover-board bg-light shadow-lg">
+        <div class="jumbotron position-absolute p-1 hover-board bg-light shadow-lg" onmouseover="showBoard()"
+            onmouseout="hideBoard()">
             <ul class="list-group">
                 <a href="./Profile.html" class="list-group-item bg-transparent mb-3 rounded-lg p-1">
                     <span class="m-1"><i class="fa fa-user"></i><span> profile</span></span>
@@ -79,9 +75,9 @@
             </ul>
         </div>
 
-    <div class="container p-2 indicator-con">
-        <p class="lead m-0 page-indicator">Home/Transactions</p>
-    </div>
+        <div class="container p-2 indicator-con">
+            <p class="lead m-0 page-indicator">Home/Transactions</p>
+        </div>
 
         <div class="jumbotron container p-2 bg-transparent">
             <div class="jumbotron bg-transparent  d-flex justify-content-around p-1" id="trans-page-list-con">
@@ -149,7 +145,7 @@
         </div>
     </div>
 
-
+    <script defer src="./js/spine.js"></script>
 </body>
 
 </html>

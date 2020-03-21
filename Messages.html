@@ -20,13 +20,13 @@
 <body>
 
     <div class="container-fluid p-0">
-        <nav
-            class="navbar navbar-expand-lg navbar-light header                                                                                                                             ">
+        <nav class="navbar navbar-expand-lg navbar-light header">
             <a class="navbar-brand" href="./index.html">
                 <p class="lead ml-md-3 brand-name my-1">SmartCharge</p>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarSupportedContent" onclick="showBar()" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -46,23 +46,22 @@
                     <li class="nav-item  mx-5">
                         <a class="nav-link nav-text" href="./About.html">About</a>
                     </li>
-                    <li class="nav-item  mx-5 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item  mx-5 dropdown" id="hover-spot">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" onmouseover="showBoard()"
+                            onmouseout="hideBoard()" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <i class="fa fa-user-circle"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <div class="jumbotron position-absolute p-1 hover-board bg-light shadow-lg">
+        <div class="jumbotron position-absolute p-1 hover-board bg-light shadow-lg" onmouseover="showBoard()"
+            onmouseout="hideBoard()">
             <ul class="list-group">
                 <a href="./Profile.html" class="list-group-item bg-transparent mb-3 rounded-lg p-1">
                     <span class="m-1"><i class="fa fa-user"></i><span> profile</span></span>
