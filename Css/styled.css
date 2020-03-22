@@ -7,7 +7,7 @@
 
 body{
     /* background: #cecdcd; */
-    background: url(/images/space_illustration-wallpaper-1600x900.jpg);
+     background-image: url("../images/space_illustration-wallpaper-1600x900.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -140,7 +140,7 @@ height: 50vh;
 }
 .little-texts{
  font-size: 110%;
-        font-family: 'IBM Plex Sans';
+            font-family: 'IBM Plex Sans';
 }
 .profile-pic-con{
     background: var(--primary-color) !important;
