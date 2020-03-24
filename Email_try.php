@@ -55,10 +55,10 @@ document.querySelector('#top-sign-btn').style.display='none' ;
 
                     <form action="email_try.php" method="POST" >
                         <div class="form-group col-md-9">
-                            <p class="text-danger lead mb-2"> <?php echo $errorText ?></p>
                         </div>
                         <div class="form-group col-md-9">
                             <label for="inputEmail">Email</label>
+                            <p class="text-danger lead m-0"> <?php echo $errorText ?></p>
                             <input type="text" class="form-control" placeholder="Enter email" name="inputEmail">
                         </div>
 
@@ -67,7 +67,7 @@ document.querySelector('#top-sign-btn').style.display='none' ;
                         </div>
                     </form>
                     <div class="form-group col-md-9 m-0">
-                        Click here to <a class="text-info" href="./login.html">Login</a>
+                        Click here to <a class="text-info" href="./login.php">Login</a>
                     </div>
                 </div>
 

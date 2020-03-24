@@ -1,6 +1,6 @@
 <?php
 
-$errorMsgs = array('username' =>'','password' =>'','confirmPassword' =>'','address' =>'','city' =>'','state' =>'', );
+$errorMsgs = array('username' =>'','password' =>'','confirmPassword' =>'','address' =>'','city' =>'','state' =>'' );
 
 // check if form is submitted
 if(isset($_POST['signUp'])){
@@ -56,7 +56,7 @@ function X_XSS($data) {
         }
     }
     
-      
+
     if(empty($_POST['inputAddress'])){
 
         $errorMsgs['address'] = 'address is required';

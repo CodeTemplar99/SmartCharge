@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
     <link href="./icons/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="./Css/styled.css" rel="stylesheet" type="text/css"> 
+    <script defer src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script defer src="./js/spine.js" type="text/javascript"></script>
 </head>
 

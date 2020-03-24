@@ -1,8 +1,8 @@
 <?php
 
-$errorMsgs = array('email' =>'','password' =>'',);
+$errorMsgs = array('email' =>'');
 
-if(isset($_POST['logMe'])){
+if(isset($_POST['linkToMail'])){
 
 
     // prevent XSS attacks
@@ -13,29 +13,23 @@ if(isset($_POST['logMe'])){
   return $data;
   }
 
-    if(empty($_POST['userEmail'])){
+    if(empty($_POST['recoveryEmail'])){
 
         $errorMsgs['email'] = 'your email address is required';
     }
     else{
-         $userEmailAddress = X_XSS($_POST['userEmail']);
-        if(!filter_var($userEmailAddress, FILTER_VALIDATE_EMAIL)){
+         $resetEmailAddress = X_XSS($_POST['recoveryEmail']);
+        if(!filter_var($resetEmailAddress, FILTER_VALIDATE_EMAIL)){
             $errorMsgs['email'] ='email must be a valid email address';
         }
-    }
-    
-    if(empty($_POST['userPass'])){
 
-        $errorMsgs['password'] = 'password is required';
+        else{
+
+         echo "<script language='javascript'>
+         window.location='./hello.php';
+        </script>";
+        }
     }
-    // else{
-    //      $newInputPassword = X_XSS($_POST['inputPassword']);
-    //     if(
-    //         // toDO
-    //     ){
-    //         $errorMsgs ['password'] ='password must not contain spaces, special characters and symbols';
-    //     }
-    // }
 }
 ?>
 
@@ -52,52 +46,23 @@ include ('./php/header_land.php');
                     style="background-image: url(./images/174007_00_2x.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
                 </div>
 
-
-              
-                <div class="jumbotron bg-transparent col-sm-12 col-md-6 col-lg-6 pl-0 rounded-0 log-cons mb-0">
-                    <div class="form-group col-md-12">
-                        <p class="lead mt-0">Log in to use your Smart account</p>
-                    </div>
-
-                    <form action="login.php" method="POST">
-                        <div class="form-group col-md-9">
-                        </div>
-                        <div class="form-group col-md-9">
-                            <label for="inputAddress">Email</label>
-                            <p class="text-danger lead m-0 font-italic"><?php echo $errorMsgs['email'] ?></p>
-                            <input type="text" class="form-control" placeholder="Email" name="userEmail">
-                        </div>
-                        <div class="form-group col-md-9">
-                            <label for="inputEmail4">Password</label>
-                            <p class="text-danger lead m-0 font-italic"><?php echo $errorMsgs['password'] ?></p>
-                            <input type="password" class="form-control" placeholder="password" name="userPass">
-                        </div>
-                        <div class="form-group mt-3 col-12">
-                            <button type="submit" class="btn btn-primary col-5 border-0" name="logMe">Login</button>
-                        </div>
-
-                    </form>
-                    <div class="form-group col-md-9 m-0">
-                        Click here to <a href="" id="toResetPassword">reset password</a>
-                    </div>
-                </div>
-                <div class="jumbotron bg-transparent col-sm-12 col-md-6 col-lg-6 pl-0 rounded-0 log-cons mb-0 " id="reg-con">
+                <div class="jumbotron bg-transparent col-sm-12 col-md-6 col-lg-6 pl-0 rounded-0 log-cons mb-0 ">
                     <div class="form-group col-md-12 mb-4">
                         <p class="lead mt-0 mb-0">Enter email linked to your account</p>
-                        <small class="text-warning">A code will be sent to you</small>
+                        <small class="text-warning">A verification will be sent to your mail</small>
                     </div>
 
-                    <form>
+                    <form action="Reset.php" method="POST">
                         <div class="form-group col-md-9">
-                            <p class="text-danger lead mb-2">ERROR HERE</p>
                         </div>
                         <div class="form-group col-md-10">
                             <label for="inputAddress">Email</label>
-                            <input type="text" class="form-control" placeholder="Email">
+                            <p class="text-danger lead m-0 font-italic"><?php echo $errorMsgs['email'] ?></p>
+                            <input type="text" class="form-control" placeholder="Email" name="recoveryEmail">
                         </div>
 
                         <div class="form-group mt-3 col-12">
-                            <button type="submit" class="btn btn-primary col-4 border-0">Submit</button>
+                            <button type="submit" class="btn btn-primary col-4 border-0" name="linkToMail">Submit</button>
                         </div>
 
                     </form>
