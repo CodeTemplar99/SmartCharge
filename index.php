@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCT.phptm.phptml lang="en">
 
 <?php
 include ('php/header.php')
@@ -68,7 +67,7 @@ include ('php/header.php')
                     </div>
                     <small class="text-muted ">04/07/20</small>
                 </a>
-                <a href="./Transactions.html" class="list-group-item list-group-item-action m-0 mb-1 p-0 border-0">
+                <a href="./Transactions.php" class="list-group-item list-group-item-action m-0 mb-1 p-0 border-0">
                     <p class="text-black text-center m-0">See More</p>
                 </a>
             </div>
@@ -114,6 +113,4 @@ include ('php/header.php')
 </div>
 
 <script defer src="./js/spine.js"></script>
-</body>
-
-</html>
+</body>.phptml>

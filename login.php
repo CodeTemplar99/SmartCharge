@@ -1,31 +1,29 @@
+<?php
+
+$errorText='';
+if(isset($_POST['logMe'])){
+
+    if(empty($_POST['userName'] ['userPass'])){
+
+       $errorText = 'Enter your email below to continue';
+        echo "<script language='javascript'>
+        console.log('hello');
+        </script>";
+        }
+        else{
+            
+            $errorText ='Enter a valid email address';
+        }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SmartCharge</title>
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
-    <link href="./icons/css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="./Css/styled.css" rel="stylesheet" type="text/css">
-    <script defer src="./js/spine.js"></script>
-</head>
-</head>
-
-<body>
-
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-light header d-flex flex-wrap justify-content-between">
-            <a class="navbar-brand" href="./index.html">
-                <p class="lead ml-md-3 brand-name my-1">SmartCharge</p>
-            </a>
-        </nav>
-
+<?php
+include ('./php/header_land.php');
+?>
         <div class="jumbotron bg-transparent container p-0 mt-2 mt-md-3 mt-lg-4">
             <div class="jumbotron d-flex mb-0 p-2 justify-content-between sign-up-con mx-1">
                 <div class="jumbotron bg-secondary col-sm-12 col-md-6 col-lg-6 rounded-0 log-cons mb-0 "
@@ -36,23 +34,23 @@
               
                 <div class="jumbotron bg-transparent col-sm-12 col-md-6 col-lg-6 pl-0 rounded-0 log-cons mb-0">
                     <div class="form-group col-md-12">
-                        <p class="lead mt-0">Log in up to use your Smart account</p>
+                        <p class="lead mt-0">Log in to use your Smart account</p>
                     </div>
 
-                    <form>
+                    <form action="login.php" method="POST">
                         <div class="form-group col-md-9">
-                            <p class="text-danger lead mb-2">ERROR HERE</p>
+                            <p class="text-danger lead mb-2"><?php echo $errorText ?></p>
                         </div>
                         <div class="form-group col-md-9">
-                            <label for="inputAddress">Username</label>
-                            <input type="text" class="form-control" placeholder="Username">
+                            <label for="inputAddress">Email</label>
+                            <input type="text" class="form-control" placeholder="Email" name="userName">
                         </div>
                         <div class="form-group col-md-9">
                             <label for="inputEmail4">Password</label>
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="password" class="form-control" placeholder="password" name="userPass">
                         </div>
                         <div class="form-group mt-3 col-12">
-                            <button type="submit" class="btn btn-primary col-5 border-0">Login</button>
+                            <button type="submit" class="btn btn-primary col-5 border-0" name="logMe">Login</button>
                         </div>
 
                     </form>

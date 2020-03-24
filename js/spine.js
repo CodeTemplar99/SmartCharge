@@ -1,3 +1,11 @@
+function toggleEmailVerify() {
+
+    document.querySelector('#checkMail').style.display = 'none';
+    document.querySelector('#confirmMail').style.display = 'block';
+
+    console.log("what")
+}
+
 
 let isOpen = false
 
