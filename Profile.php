@@ -31,7 +31,7 @@ include ('php/header.php')
                 </div>
                 <div class="jumbotron px-4 p-0 m-0 d-flex justify-content-between">
                     <p class="lead m-0">Transaction Details</p>
-                    <p><i class="fa fa-pencil-alt"></i> <span>edit</span></p>
+                    <!-- <p><i class="fa fa-pencil-alt"></i> <span>edit</span></p> -->
                 </div>
                 <div class="jumbotron p-2 mt-0">
                     <ul class="list-group">
@@ -67,7 +67,7 @@ include ('php/header.php')
                 </div>
                 <div class="jumbotron px-4 p-0 m-0 d-flex justify-content-between">
                     <p class="lead m-0">Security</p>
-                    <p><i class="fa fa-pencil-alt"></i> <span>edit</span></p>
+                    <!-- <p><i class="fa fa-pencil-alt"></i> <span>edit</span></p> -->
                 </div>
                 <div class="jumbotron p-2 mt-0 mb-1">
                     <ul class="list-group">

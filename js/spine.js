@@ -1,12 +1,4 @@
-function toggleEmailVerify() {
-
-    document.querySelector('#checkMail').style.display = 'none';
-    document.querySelector('#confirmMail').style.display = 'block';
-
-    console.log("what")
-}
-
-
+// hover board
 let isOpen = false
 
 function showBoard() {
@@ -22,3 +14,18 @@ function showBar() {
     isOpen = !isOpen
 
 }
+
+// AJAX for recharge forms
+
+// function ajax_func() {
+//     let xmlHttp = new XMLHttpRequest();
+//     xmlHttp.onreadystatechange = () => {
+//         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+//             var receiver = document.getElementById("get_data");
+//             receiver.innerHTML = xmlHttp.responseText;
+//         }
+//     }
+
+//     xmlHttp.open('GET', 'core.php', true);
+//     xmlHttp.send();
+// }

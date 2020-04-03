@@ -185,6 +185,17 @@ height: 50vh;
     height: 45vh;
 }
 
+.shadow-lg hr{
+    margin-top: 50px;
+}
+
+
+.plan-name{
+    font-weight: bold !important;
+    font-family: tahoma !important;
+    font-size: 140% !important;
+}
+
 /* ------------------------ */
 @media screen and (max-width:425px){
  
@@ -239,7 +250,7 @@ height: 50vh;
 
 .hover-board{
     display: none;
-    right: 28% !important;
+    right: 17% !important;
     width: 200px;
     top: 43.5vh;
     z-index: 4;
@@ -250,7 +261,6 @@ height: 50vh;
     align-items: center !important;
     margin:  auto !important;
     margin-bottom: 30px !important;
-    border: 2px solid white;
 }
 
 }

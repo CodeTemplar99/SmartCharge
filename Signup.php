@@ -103,6 +103,11 @@ function X_XSS($data) {
 <?php
 include ('./php/header_land.php')
 ?>
+
+<script type="text/javascript">
+ document.querySelector('#top-sign-btn').style.display="none";   
+</script>
+
    
         <div class="jumbotron bg-transparent container p-0 mt-2 mt-md-3 mt-lg-4">
             <div class="jumbotron d-flex mb-0 p-2 justify-content-between sign-up-con mx-1">

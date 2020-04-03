@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +10,42 @@
     <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
     <link href="./icons/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="Css/styled.css" rel="stylesheet" type="text/css">
-    <script defer src="./js/jquery-3.4.1.min.js"></script>
-</head>
+    <script defer src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script>
+        
+
+    var form = document.forms[0];
+        form.onsubmit = function(event){
+            event.preventDefault();
+            send(form.text);
+
+        }
+
+      function ajax_func(input){
+            let xhttp;
+            if (window.XMLHttpRequest) {
+                xhttp = new XMLHttpRequest();
+            } else {
+                xhttp = new ActiveXObject('Microsoft.XMLHTTP');
+            }
+
+            xhttp.onload = function(){
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
+                    console.log(xhttp.responseText);
+                    input.value = "";
+                }
+            }
+
+            xhttp.open("POST", "core.php", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("word="+ input.value);
+        }
+
+
+    </script>
 </head>
 
 <body>
-
-
     <div class="container-fluid  p-0">
         <nav class="navbar navbar-expand-lg navbar-light header">
             <a class="navbar-brand" href="./index.php">

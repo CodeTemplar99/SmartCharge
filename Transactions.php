@@ -9,11 +9,11 @@ include ('php/header.php')
         </div>
 
         <div class="jumbotron container p-2 bg-transparent">
-            <div class="jumbotron bg-transparent  d-flex justify-content-around p-1" id="trans-page-list-con">
+            <div class="jumbotron bg-transparent p-1" id="trans-page-list-con">
 
-                <div class="list-group m-0  col-sm-12 col-md-12 col-lg-12">
+                <div class="list-group m-0 p-0 col-sm-12 col-md-12 col-lg-12">
 
-                    <a href="#" class="list-group-item list-group-item-action m-0 mb-1 px-2 py-1">
+                    <a href="#" class="list-group-item list-group-item-action col-lg-12 m-0 mb-1 px-2 py-1">
                         <div class="d-flex w-100 justify-content-between m-0 p-0">
                             <h6 class="m-0">08123456789<span class="ml-1">[MTN]</span></h6>
                             <small class="text-muted">N100</small>
@@ -21,22 +21,14 @@ include ('php/header.php')
                         <small class="text-muted">Status:<span>Sucessful</span></small><br>
                         <small class="text-muted">04/07/20</small>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action m-0 mb-1 px-2 py-1">
+                    <a href="#" class="list-group-item list-group-item-action col-lg-12 m-0 mb-1 px-2 py-1">
                         <div class="d-flex w-100 justify-content-between m-0 p-0">
                             <h6 class="m-0">08123456789<span class="ml-1">[MTN]</span></h6>
                             <small class="text-muted">N100</small>
                         </div>
                         <small class="text-muted">Status:<span>Sucessful</span></small><br>
                         <small class="text-muted">04/07/20</small>
-                    </a><a href="#" class="list-group-item list-group-item-action m-0 mb-1 px-2 py-1">
-                        <div class="d-flex w-100 justify-content-between m-0 p-0">
-                            <h6 class="m-0">08123456789<span class="ml-1">[MTN]</span></h6>
-                            <small class="text-muted">N100</small>
-                        </div>
-                        <small class="text-muted">Status:<span>Sucessful</span></small><br>
-                        <small class="text-muted">04/07/20</small>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action m-0 mb-1 px-2 py-1">
+                    </a><a href="#" class="list-group-item list-group-item-action col-lg-12 m-0 mb-1 px-2 py-1">
                         <div class="d-flex w-100 justify-content-between m-0 p-0">
                             <h6 class="m-0">08123456789<span class="ml-1">[MTN]</span></h6>
                             <small class="text-muted">N100</small>
@@ -44,7 +36,7 @@ include ('php/header.php')
                         <small class="text-muted">Status:<span>Sucessful</span></small><br>
                         <small class="text-muted">04/07/20</small>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action m-0 mb-1 px-2 py-1">
+                    <a href="#" class="list-group-item list-group-item-action col-lg-12 m-0 mb-1 px-2 py-1">
                         <div class="d-flex w-100 justify-content-between m-0 p-0">
                             <h6 class="m-0">08123456789<span class="ml-1">[MTN]</span></h6>
                             <small class="text-muted">N100</small>
@@ -52,7 +44,15 @@ include ('php/header.php')
                         <small class="text-muted">Status:<span>Sucessful</span></small><br>
                         <small class="text-muted">04/07/20</small>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action m-0 mb-0 p-1">
+                    <a href="#" class="list-group-item list-group-item-action col-lg-12 m-0 mb-1 px-2 py-1">
+                        <div class="d-flex w-100 justify-content-between m-0 p-0">
+                            <h6 class="m-0">08123456789<span class="ml-1">[MTN]</span></h6>
+                            <small class="text-muted">N100</small>
+                        </div>
+                        <small class="text-muted">Status:<span>Sucessful</span></small><br>
+                        <small class="text-muted">04/07/20</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action col-lg-12 m-0 mb-0 p-1">
                         <div class="d-flex w-100 justify-content-between m-0 p-0">
                             <h6 class="m-0">08123456789<span class="ml-1">[MTN]</span></h6>
                             <small class="text-muted">N100</small>

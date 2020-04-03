@@ -22,7 +22,7 @@
                 <p class="lead ml-md-3 brand-name my-1">SmartCharge</p>
             </a>
 
-            <a href="./Signup.php" id="top-sign-btn"><button class="btn">Sign up</button></a>
+            <a href="./email_try.php" id="top-sign-btn"><button class="btn">Sign up</button></a>
         </nav>
 
 

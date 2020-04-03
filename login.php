@@ -78,7 +78,7 @@ include ('./php/header_land.php');
 
                     </form>
                     <div class="form-group col-md-9 m-0">
-                        Click here to <a href="" id="toResetPassword">reset password</a>
+                        Click here to <a href="./reset.php" id="toResetPassword">reset password</a>
                     </div>
                 </div>
                 <div class="jumbotron bg-transparent col-sm-12 col-md-6 col-lg-6 pl-0 rounded-0 log-cons mb-0 " id="reg-con">
