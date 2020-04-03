@@ -15,6 +15,19 @@ function showBar() {
 
 }
 
+// slide for landing
+var on = true;
+var myVar = setInterval(function () { if (on) { slides() } on = true; }, 5000);
+
+function slides() {
+    document.getElementsByTagName("img")[0].style.width = "0px";
+    document.getElementsByTagName("img")[1].style.width = "100%";
+    var slide = document.getElementsByTagName("img")[0];
+    document.getElementById("slide").appendChild(slide);
+
+}
+
+
 // AJAX for recharge forms
 
 // function ajax_func() {

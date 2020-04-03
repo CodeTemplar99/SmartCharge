@@ -8,8 +8,12 @@ include ('./php/header_land.php')
         </div>
 
         <div class="jumbotron container p-2 bg-transparent">
-            <div class="jumbotron bg-warning d-flex justify-content-around p-1 landing-ad"
-                style="background-image: url(./images/174007_00_2x.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+            <div class="jumbotron bg-transparent p-0 landing-ad" id="slide">
+                <!-- style="background-image: url(./images/174007_00_2x.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; -->
+
+                <img class="img-fluid" src="./images/174007_00_2x.jpg">
+                  <img class="img-fluid imgs" src="./images/A-young-Ghanaian-woman-using-her-mobile-phone.jpg">
+                    <img class="img-fluid imgs" src="./images/48090342_401.jpg">
 
             </div>
 
