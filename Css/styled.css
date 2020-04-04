@@ -209,7 +209,47 @@ height: 50vh;
 
    
        
+/* admin */
 
+.dash-tab{
+min-width: 200px !important;
+word-wrap: break-word;
+}
+
+.fa-link{
+    color: blue;
+}
+.fa-sign-in-alt{
+    color: green;
+}
+.fa-download{
+    color:deeppink;
+}
+
+.fa-dollar-sign{
+    color: goldenrod;
+}
+
+.fa-money-bill-alt{
+    color: #137e63;
+}
+
+.figures{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 140%;
+}
+
+.bigger-tabs{
+    overflow-y: auto;
+    max-height: 50vh;
+}
+
+.drop-btn{
+background-color: dimgray !important;
+}
+
+/* admin */
 
 
 
